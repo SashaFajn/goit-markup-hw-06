@@ -467,11 +467,6 @@ button {
   display: none;
 }
 /* -------------------------------FOOTER-------------------------------------- */
-.footer-container.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -482,7 +477,6 @@ button {
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
-  align-items: center;
 }
 .footer-logo-part {
   font-family: "Raleway", sans-serif;
@@ -499,23 +493,16 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 288px;
-  max-height: 72px;
-  margin-bottom: 72px;
 
-  /* max-width: 264px;
-  max-height: 112px; */
+  max-width: 264px;
+  max-height: 112px;
 }
 .footer {
   background: #2e2f42;
-  /* padding-top: 100px;
+  padding-top: 100px;
   padding-bottom: 100px;
-  display: block; */
-  padding-top: 96px;
-  padding-bottom: 96px;
-  margin: 0 auto;
+  display: block;
 }
-
 .text-social-footer {
   font-weight: 500;
   font-size: 16px;
@@ -523,17 +510,14 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
-/* .footer-container {
+.footer-container {
   display: flex;
   align-items: baseline;
-} */
-/* .first-part-footer {
+}
+.first-part-footer {
   margin-right: 120px;
-} */
+}
 .social-list-footer {
   display: flex;
   gap: 16px;
@@ -541,16 +525,16 @@ button {
   justify-content: center;
   margin-top: 8px;
   padding-left: 0;
-  margin-bottom: 72px;
+  margin-bottom: 32px;
 }
 
 .social-item-footer {
   width: 40px;
   height: 40px;
 }
-/* .footer-social {
+.footer-social {
   margin-right: 80px;
-} */
+}
 .social-link-footer {
   width: 40px;
   height: 40px;
@@ -561,10 +545,10 @@ button {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .social-link-footer:hover,
+.social-link-footer:hover,
 .social-link-footer:focus {
   background-color: #31d0aa;
-} */
+}
 .subscribe-footer {
   font-weight: 500;
   font-size: 16px;
@@ -572,8 +556,6 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  text-align: center;
-  justify-content: center;
 }
 .input-footer::placeholder {
   font-weight: 400;
@@ -585,7 +567,7 @@ button {
 .input-footer {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 288px;
+  width: 264px;
   height: 40px;
   outline: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -624,8 +606,7 @@ button {
 
 .form-footer {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 /* overlay */
@@ -1000,18 +981,11 @@ button {
   .portfolio-items {
     flex-basis: calc ((100% - 24px) / 2);
   }
-
-  .list-footer {
+  .footer-container {
+    flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 72px;
-  }
-  .footer-item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-  .footer {
+    gap: 72px 24px;
     padding-left: 108px;
-    padding-right: 164;
   }
 }
 
